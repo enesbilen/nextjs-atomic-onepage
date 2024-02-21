@@ -1,0 +1,96 @@
+// tab.module.scss
+
+.container {
+  width: 100%;
+
+  .tabGroup {
+    width: 100%;
+
+    .tabList {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .tab {
+        user-select: none;
+        width: auto;
+        height: 42px;
+        padding: 0px 15px;
+        transition: 0.3s ease;
+        display: flex;
+        cursor: pointer;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: #fff;
+
+        &.active {
+          user-select: none;
+          width: auto;
+          padding: 0px 15px;
+          transition: 0.3s ease;
+          display: flex;
+          cursor: pointer;
+          align-content: center;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #0b163f;
+          color: var(--text);
+          font-weight: bold;
+          border-radius: 10px 10px 0px 0px;
+
+          .title {
+            color: var(--text);
+          }
+
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: #e2e8f0;
+        }
+
+        .title {
+          font-size: 14px;
+          font-weight: 700;
+          color: #0b163f;
+          text-align: center;
+          transition: 0.5s ease;
+        }
+      }
+    }
+
+    .tabPanelContainer {
+
+      .tabPanel {
+        background-color: #edf2f7;
+        padding: 0.75rem;
+
+        &.active {
+          background: #0b163f;
+          color: white;
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {}

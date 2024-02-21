@@ -1,0 +1,74 @@
+// navbar.module.scss
+
+.container {
+  background: linear-gradient(90deg, #021049 0%, #1d369e 100%);
+  width: 100%;
+  transition: all 0.3s ease;
+  position: fixed !important;
+  z-index: 9999;
+
+  .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hamburger {
+      display: none;
+    }
+
+    .logo {
+      color: var(--text);
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.sticky {
+  transition: background-color 0.3s ease;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 24px -16px;
+  background: #ffffff;
+  z-index: 1000;
+
+  a {
+    color: #02104a;
+  }
+}
+
+
+@media only screen and (max-width:1024px) {
+  .container{
+    .inner{
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .nav {
+    display: none;
+  }
+
+  .inner {
+    width: 100% !important;
+
+    .hamburger {
+      position: relative;
+      display: block !important;
+      height: 50px;
+      width: 100%;
+    }
+
+    .logo {
+      margin-left: 20px;
+    }
+  }
+
+}

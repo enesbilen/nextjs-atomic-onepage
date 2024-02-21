@@ -1,0 +1,118 @@
+.bgRef {
+    position: relative;
+    padding: 120px;
+    display: flex;
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 40%;
+        z-index: -1;
+        height: auto;
+        background-color: #0B163F;
+    }
+
+    .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image {
+            position: relative;
+            width: 45%;
+            height: 500px;
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                font-size: 20px;
+                font-weight: bold;
+                color: #175cff;
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-size: 41px;
+                font-weight: 800;
+                color: #071c4d;
+                margin-bottom: 23px;
+            }
+
+            .feature {
+                margin: 30px 0 0 0;
+
+                .box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+
+                    &:nth-child(2) .icon {
+                        background: #ff3a3a;
+                    }
+                }
+
+                .icon {
+                    padding: 15px 20px;
+                    font-size: 26px;
+                    color: white;
+                    background: #3a75ff;
+                    border-radius: 8px;
+                    margin-right: 21px;
+                }
+
+                .text {
+                    .head {
+                        font-weight: 700;
+                        font-size: 19px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    .bgRef {
+        padding: 120px 0;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .bgRef{
+        padding: 0;
+        &::after {
+            display: none;
+        }
+
+        .inner {
+            flex-direction: column;
+            .image{
+                width: 100%;
+            }
+
+            .info{
+                width: 100%;
+                h2{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

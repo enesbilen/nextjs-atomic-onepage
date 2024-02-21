@@ -1,0 +1,95 @@
+.container {
+    user-select: none;
+    width: 100%;
+    height: auto;
+    padding: 85px 0 0 0;
+    background: linear-gradient(90deg, rgba(2, 16, 73, 1) 0%, rgba(29, 54, 158, 1) 100%);
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+
+        .box {
+            width: 20%;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    line-height: 29px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin: 16px 0px;
+                    color: var(--text);
+
+                    &:hover {
+                        color: var(--textHover);
+                    }
+
+                    svg {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .footerLink {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .title {
+                    text-decoration: none;
+                    color: #d6d5e1;
+                    font-size: 15px;
+                    font-weight: 500;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        color: var(--textHover);
+                    }
+                }
+            }
+
+            .logo {
+                color: var(--text);
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            p {
+                line-height: 29px;
+                font-weight: 500;
+                font-size: 14px;
+                margin: 16px 0px;
+                color: var(--text);
+            }
+
+            h4 {
+                font-weight: 600;
+                color: #fff;
+                font-size: 19px;
+                margin-bottom: 15px;
+            }
+
+            &:nth-child(1) {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        flex-direction: column;
+        .inner{
+            flex-direction: column;
+            .box{
+                width: 100% !important;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
