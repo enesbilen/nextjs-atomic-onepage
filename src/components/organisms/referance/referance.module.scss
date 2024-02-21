@@ -105,12 +105,46 @@
             flex-direction: column;
             .image{
                 width: 100%;
+                height: 250px;
+                img{
+                    object-fit: contain;
+                }
             }
 
             .info{
                 width: 100%;
                 h2{
                     font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:425px) {
+    .bgRef{
+        padding: 0;
+        &::after {
+            display: none;
+        }
+
+        .inner {
+            flex-direction: column;
+            .image{
+                display: none;
+            }
+
+            .info{
+                .feature {
+                    .box{
+                        margin-bottom: 15px;
+                        .text {
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -47,7 +47,7 @@
     .menu {
         display: flex;
         flex-direction: column;
-        right: 0;
+        right: -25px;
         position: absolute;
         opacity: 0;
         visibility: hidden;
@@ -69,6 +69,17 @@
 
         a{
             color: var(--textSoft);
+        }
+    }
+}
+
+
+@media only screen and (max-width:425px) {
+    .container {
+        .menu{
+            &.active{
+                width: 100%;
+            }
         }
     }
 }

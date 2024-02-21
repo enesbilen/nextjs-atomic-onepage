@@ -137,15 +137,51 @@
 
         .inner {
 
+            .feature {}
+
+            .featureImg {
+                padding: 0;
+
+                .box {
+                    width: 49%;
+
+                    .left {
+                        width: 100%;
+
+                        .text {
+                            height: auto;
+                        }
+                    }
+
+                    .right {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .bgServices {
+
+        .inner {
+
             .feature {
-                flex-direction: column;
+                display: none;
             }
 
-            .featureImg{
-                padding: 0;
+            .featureImg {
                 flex-direction: column;
-                .box{
+
+                .box {
                     width: 100%;
+
+                    .text {
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+
                 }
             }
         }
