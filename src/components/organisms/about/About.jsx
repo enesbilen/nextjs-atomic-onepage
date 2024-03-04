@@ -1,5 +1,3 @@
-"use client"
-
 import Image from 'next/image';
 import { FaCodeCompare, FaChartPie, FaRegCircleCheck } from "react-icons/fa6";
 import styles from './about.module.scss'

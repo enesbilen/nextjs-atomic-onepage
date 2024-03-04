@@ -1,26 +1,26 @@
 [
     {
-        "title": "Home",
+        "title": "Anasayfa",
         "path": "#home"
     },
     {
-        "title": "About",
+        "title": "Hakkımızda",
         "path": "#about"
     },
     {
-        "title": "Products",
+        "title": "Ürünlerimiz",
         "path": "#products"
     },
     {
-        "title": "Services",
+        "title": "Hizmetlerimiz",
         "path": "#services"
     },
     {
-        "title": "Referance",
+        "title": "Referanslarımız",
         "path": "#referance"
     },
     {
-        "title": "Contact",
+        "title": "İletişim",
         "path": "#contact"
     }
 ]

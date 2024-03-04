@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Anasayfa",
+        "path": "/"
+    },
+    {
+        "title": "Profil",
+        "path": "/dashboard"
+    },
+    {
+        "title": "Yardım",
+        "path": "#"
+    },
+    {
+        "title": "SSS",
+        "path": "#"
+    },
+    {
+        "title": "İletişim",
+        "path": "#"
+    }
+]

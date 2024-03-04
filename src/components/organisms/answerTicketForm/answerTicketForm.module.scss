@@ -1,0 +1,168 @@
+.container {
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin-top: 50px;
+    position: relative;
+    transition: all .25s ease-in-out;
+    border: 1px solid #f1f1f4;
+    background-color: #fff;
+
+    .inner {
+
+        .box {
+
+            .ticketInfo {
+
+                .col {
+                    .head {
+                        display: flex;
+                        margin-bottom: 25px;
+
+                        .icon {
+                            font-size: 50px;
+                            color: #17c653;
+                            margin-right: 10px;
+                        }
+
+                        .detail {
+                            h2 {
+                                font-size: 22px;
+                                font-weight: 600;
+                                color: #252f4a;
+                            }
+
+                            .info {
+                                display: flex;
+                                gap: 20px;
+
+                                p {
+                                    text-transform: capitalize;
+                                    font-weight: 600;
+                                    color: #99a1b7;
+                                    font-size: 14px;
+                                    &:nth-child(2) {
+                                        span{
+                                            text-transform: lowercase;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .answersInfo {
+                .ticketMessage {
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        color: #252f4a;
+                        font-size: 14px;
+                    }
+                }
+
+                .images {
+                    margin: 30px 0;
+                }
+
+                .form {
+                    display: flex;
+                    flex-direction: column;
+
+                    textarea {
+                        padding: 20px;
+                        background-color: var(--inputBg);
+                        color: var(--textColor);
+                        border: none;
+                        border-radius: 5px;
+                    }
+
+                    button {
+                        color: #fff;
+                        background-color: #5cb85c;
+                        border-color: #4cae4c;
+
+                        &:hover {
+                            color: #fff;
+                            background-color: #449d44;
+                            border-color: #398439;
+                        }
+                    }
+                }
+
+                .answersBox {
+                    margin: 30px 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .detail {
+                        border: 1px solid #f1f1f4;
+                        padding: 2rem 2.25rem;
+                        border-radius: 10px;
+
+                        .mb {
+                            .head {
+                                display: flex;
+                                margin-bottom: 20px;
+
+                                .figure {
+                                    text-transform: uppercase;
+                                    color: #5cb85c;
+                                    background-color: #5cb85c3a;
+                                    font-weight: bolder;
+                                    font-size: 22px;
+                                    padding: 8px 18px;
+                                    margin-right: 20px;
+                                    border-radius: 10px;
+                                }
+
+                                .alt {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    width: 100%;
+
+                                    .ust {
+                                        p {
+                                            font-size: 18px;
+                                            text-transform: capitalize;
+                                            &:last-child {
+                                                text-transform: lowercase;
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #99a1b7;
+                                            }
+                                        }
+                                    }
+
+                                    .date {
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: #99a1b7;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-child(odd) {
+                            .mb {
+                                .head {
+                                    .figure {
+                                        color: #1b84ff;
+                                        background-color: #1b85ff3a;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

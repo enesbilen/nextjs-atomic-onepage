@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Styles from "./styles.modules.scss";
 import Slider from "@/components/organisms/slider";
 import About from "@/components/organisms/about";
@@ -6,9 +5,6 @@ import Products from "@/components/organisms/products";
 import Services from "@/components/organisms/services";
 import Referance from "@/components/organisms/referance";
 import Contact from "@/components/organisms/contact";
-
-
-
 
 
 export default function MainTemplate() {

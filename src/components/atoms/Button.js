@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './button.module.scss';
 
-const Button = ({ onClick, children, type, disabled, variant }) => {
+const Button = ({ onClick, children, type = 'button', disabled = false, variant = 'success' }) => {
     // Determine the className based on the variant prop
     const buttonClassName = `${styles.button} ${styles[variant]}`;
 
@@ -23,12 +23,6 @@ Button.propTypes = {
     type: PropTypes.oneOf(['button', 'submit', 'reset']),
     disabled: PropTypes.bool,
     variant: PropTypes.oneOf(['success', 'warning', 'info', 'outline', 'gradient']),
-};
-
-Button.defaultProps = {
-    type: 'button',
-    disabled: false,
-    variant: 'success',
 };
 
 export default Button;

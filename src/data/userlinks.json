@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Anasayfa",
+        "path": "/"
+    },
+    {
+        "title": "Profil",
+        "path": "/user-panel"
+    },
+    {
+        "title": "Yardım",
+        "path": "#"
+    },
+    {
+        "title": "SSS",
+        "path": "#"
+    },
+    {
+        "title": "Referance",
+        "path": "#"
+    },
+    {
+        "title": "Contact",
+        "path": "#"
+    }
+]

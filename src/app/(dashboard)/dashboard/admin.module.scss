@@ -1,0 +1,18 @@
+.container {
+  .inner {
+    width: 100%;
+    padding: 120px 0;
+
+    .head {
+      margin-bottom: 30px;
+      text-transform: capitalize;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}

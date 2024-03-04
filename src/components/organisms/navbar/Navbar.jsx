@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div id="header" className={`${styles.container} ${isSticky ? styles.sticky : ""}`}>
       <div className={styles.inner}>
-        <Link href='#home' className={styles.logo}>
+        <Link href='/' className={styles.logo}>
           <Image alt='EnesDev' src={isSticky ? '/logo/eneslogo.png' : '/logo/eneslogoWhite.png'} height={50} width={128} />
         </Link>
         <div className={styles.nav}>
